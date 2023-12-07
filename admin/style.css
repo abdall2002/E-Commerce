@@ -1,0 +1,260 @@
+/* start header */
+header {
+    background-color: #eee;
+	border-bottom: 5px solid #222;
+}
+.logo {
+	font-size: 60px;
+}
+.container{
+    width: 90%;
+	overflow: hidden;
+	margin: auto;
+	overflow: hidden;
+}
+header .container {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bc {
+	color:rgb(243, 243, 243);
+}
+.bgc {
+	background-color: rgb(63, 80, 110);
+}
+.sc {
+	color: white;
+}
+header .container .logo {
+    height: 100px;    
+}
+header .container nav ul {
+	display: flex;
+	list-style-type: none;
+}
+header .container nav ul li {
+	margin-right: 35;
+}
+header .container nav ul li:last-child {
+	margin-right: 0;
+}
+header .container nav ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #484957;
+}
+header .container nav ul li a:hover {
+	color: cornflowerblue;
+}
+header .container nav ul li a.Active {
+	color: cornflowerblue;
+}
+	/* End header */
+
+
+	/* Start Section */	
+#fold {
+	background: url(../image/1cb32e5eca87add3785208e57a3e0e3e.gif);
+	height: 600px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+#fold .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    height: 100%;
+}
+#fold .container h1 {
+	font-size: 40px;
+    position: relative;
+    animation-name: leftToRight;
+	animation-duration: 2s;
+}
+#fold .container p {
+	font-size: 20px;
+	position: relative;
+	animation-name: rightToLeft;
+	animation-duration: 2s;
+}
+	/* End Section */
+    
+	/* Start About Us sevtion */
+.head-section {
+	text-align: center;
+	padding: 5px;
+}
+.head-section {
+    font-size: 40px;
+	letter-spacing: 7px;
+}
+#about-us .container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 40px;
+}
+#about-us .container .left {
+    flex: 3;
+}
+#about-us .container .right {
+    flex: 2;
+}
+#about-us .container .right img {
+	max-width: 100%;
+}
+#about-us .container h3 {
+	font-size: 30px;
+}
+#about-us .container p {
+	font-size: 22px;
+}
+
+
+	/* End About Us sevtion */
+
+
+	/* Start Our Services sevtion */
+	
+#our-services .container {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+	flex-wrap: wrap;
+}
+#our-services .container .area{
+    width: 30%;
+	text-align: center;
+    margin-bottom: 25px;
+}
+#our-services .container .area-img {
+	overflow: hidden;
+}	
+#our-services .container .area-img img {
+	max-width: 100%;
+	transition: all 0.4s linear;
+}
+#our-services .container .area-img img:hover {
+	opacity: 0.5;
+	transform: scale(1.3,1.3);
+}
+#our-services .container .area .area-content h3 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+#our-services .container .area .area-content .area-btn {
+	border: 1px solid #ccc;
+	padding: 15px 20px;
+	background-color: rgba(2,2,2,0.5);
+	color: white;
+	cursor: pointer;
+	transition: all 0.4s linear;
+
+}
+#our-services .container .area .area-content .area-btn:hover {
+	color: #222;
+	background-color: #eee;
+	transform: scale(1.1,1.1);
+
+}
+	/* End Our Services section */
+
+
+	/* start Contact-Us section */
+#contact-us .container {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#contact-us .container form {
+	width: 70%;
+	padding: 40px;
+}
+#contact-us .container form label {
+	display: block;
+	margin: 15px;
+}
+#contact-us .container form .form-group input ,#contact-us .container form .form-group textarea {
+    width: 100%;
+	margin-bottom: 30px;
+	padding: 10px 15px;
+}
+	
+	/* End Contact-Us section */
+
+
+	/* Start footer */
+footer {
+	text-align: center;
+	padding: 30px 15px;
+	background-color: #484957;
+}	
+	/* End footer */
+
+
+	/* animations */
+
+@keyframes leftToRight 
+{
+    0%{left:-1500px;}
+	100%{left:0px;}
+}	
+@keyframes rightToLeft 
+{
+    0%{right:-1500px;}
+	100%{right:0px;}
+}
+
+
+.three_quarter{display:inline-block; float:left; margin:0 0 0 4.21052%; list-style:none;}
+.three_quarter{width:73.94736%;}
+.one_quarter{width:20.8421%;}
+.heading{margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal; text-transform:capitalize;}
+.heading{font-family:Georgia, "Times New Roman", Times, serif;}
+.one_quarter{display:inline-block; float:left; margin:0 0 0 4.21052%; list-style:none;}
+#ctdetails{}
+
+#ctdetails figure > ul{}
+#ctdetails figure > ul li{position:relative; margin:0 0 35px 0; padding:15px 15px 15px 80px; line-height:1;}
+#ctdetails figure > ul li:last-child{margin:0;}/* Used when elements stack in small viewports */
+#ctdetails figure > ul li i{position:absolute; top:15px; left:15px; width:45px; height:45px; line-height:45px; font-size:16px; text-align:center; border-radius:50%;}
+#ctdetails figure > ul li span{display:block; padding:4px 0 0 0;}
+#ctdetails figure > ul li strong{display:block; margin:0 0 8px 0; text-transform:capitalize;}
+
+#ctdetails article{margin-bottom:0;}/* Used when elements stack in small viewports */
+#ctdetails input,select #ctdetails button{border:1px solid;}
+#ctdetails input,select{display:block; width:100%; padding:15px; margin-bottom:20px;}
+#ctdetails button{padding:8px 18px 10px; text-transform:uppercase; font-weight:400; cursor:pointer;}
+
+#ctdetails select #ctdetails button{border:1px solid;}
+#ctdetails select{display:block; width:100%; padding:15px; margin-bottom:20px;}
+.heading.nospace{margin-bottom:0;}
+.nospace{margin:0; padding:0; list-style:none;}
+.heading{margin-bottom:20px; font-size:4rem;}
+.heading{font-size:1.2rem; font-weight:700;}
+.heading{font-size:1.4rem;}
+.one_quarter1{display:block; float:none; width:auto; margin:0 0 30px 0;}
+
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px; color:#000;}
+td{border-width:0 1px;}
+
+
+body, input, textarea, select{font-family:Verdana, Geneva, sans-serif;}
+h1, h2, h3, h4, h5, h6, .heading{font-family:Georgia, "Times New Roman", Times, serif;}
+
+
+
+:required, :invalid{outline:none; box-shadow:none;}
+::placeholder{opacity:1;}/* Makes sure the placeholder text is not transparent */
+h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal; text-transform:capitalize;}
+.heading.nospace{margin-bottom:0;}
+
+address{font-style:normal; font-weight:normal;}
+hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
+
+.elements article .heading{font-size:1.2rem; font-weight:700;}

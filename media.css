@@ -1,0 +1,54 @@
+@media screen and (min-width:768px) and (max-width:1100px)
+{
+    #our-services .container .area{
+        width: 50%;
+    }           
+}
+
+@media screen and (max-width:768px)
+{
+    /* Start header */
+    header .container {
+        flex-direction: column;
+    }
+    /* End header */
+
+
+    /* Start section */
+    #fold {
+        height: 350;
+    }
+    #fold .container h1 {
+        font-size: 30px;
+    
+    }
+    #fold .container p {
+        font-size: 20px;
+    }
+    /* End section */
+
+
+
+    /* Start About Us section */
+    #about-us .container {
+        flex-direction: column;
+    }
+    #about-us .container .right {
+        text-align: center;
+        padding: 15px 10 px;
+    }
+    #about-us .container .left {
+        text-align: center;
+    }
+    /* End About Us section */
+
+
+    /* Start Our Services section */
+    #our-services .container {
+        flex-direction: column;
+    }
+    #our-services .container .area {
+        width: 100%;
+    }
+    /* End Our Services section */
+}
